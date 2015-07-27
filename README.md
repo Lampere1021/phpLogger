@@ -5,13 +5,13 @@
 ```php
 $logConfig = array(  
   'intLevel' => 0xff,  
-  >'strLogFile' => '/data/log/super'.date('Ymd').'.log',  
-  >'intMaxFileSize' => 0, //0为不限制  
+  'strLogFile' => '/data/log/super'.date('Ymd').'.log',  
+  'intMaxFileSize' => 0, //0为不限制  
 );  
 Logger::create(  
-  >$logConfig['intLevel'],  
-  >$logConfig['strLogFile'],  
-  >$logConfig['intMaxFileSize']  
+  $logConfig['intLevel'],  
+  $logConfig['strLogFile'],  
+  $logConfig['intMaxFileSize']  
 );  
 Logger::setLogId(Logger::getLogId());  
 $params = array('get' => $_GET, 'post' => $_POST);  
